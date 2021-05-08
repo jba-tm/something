@@ -37,7 +37,7 @@ Apify.main(async () => {
     const parse_url = 'https://www.etoro.com/sapi/trade-data-real/live/public/portfolios?cid=3378352&format=json';
     const page2 = await browser.newPage();
 
-    for (let i=0;i<50;i++) {
+    for (let i=0;i<500;i++) {
         console.log('go to with 20 times')
         console.log(`${i} time out 2 sec`)
         await page2.goto(parse_url, {waitUntil: 'networkidle0'})
